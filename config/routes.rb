@@ -5,4 +5,5 @@ devise_for :users
     resource :favorites, only: [:create, :destroy]
     resources :post_comments, only: [:create, :destroy]
   end
+  resources :users, only: [:show, :edit, :update]
  end
